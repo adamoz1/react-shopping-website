@@ -77,10 +77,10 @@ const CheckOut = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-full max-w-4xl mx-auto p-4">
-        <h1 className="text-4xl font-extrabold mb-8 text-center" style={{ color: "#f44436" }}>Address And Payment</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center" style={{ color: "#f44436" }}>CheckOut</h1>
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           <div className="bg-[#f44336] text-white shadow-md rounded-lg p-8 w-full lg:w-1/2">
-            <h2 className="text-2xl font-bold mb-6 text-center">Add Shipping Address</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center">Fill Checkout Details</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="email" className="block text-sm font-medium">
@@ -165,12 +165,11 @@ const CheckOut = () => {
               </button>
             </form>
           </div>
-          <div className="bg-white text-white shadow-md rounded-lg p-8 w-full lg:w-1/2 mt-4 lg:mt-0 text-center">
+          <div className="bg-white text-white shadow-md rounded-lg p-8 w-full lg:w-1/2 mt-4 lg:mt-0 text-center flex flex-col justify-center items-center">
             <h2 className="text-2xl font-bold" style={{ color: '#f44336' }}>Total Amount:</h2>
             <p className="text-4xl mt-2 mb-4" style={{ color: '#f44336' }}>&#x20B9;{totalAmount.toFixed(2)}</p>
-            <h2 className="text-2xl font-bold" style={{ color: '#f44336' }}>Payment Method:</h2>
-            <p className="text-2xl mt-2" style={{ color: '#f44336' }}>Pay On Delivery (Cash/Cheque)</p>
           </div>
+
         </div>
       </div>
     </div>
